@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest Calculator</title>
+</head>
+<body>
+    <h1>Compound Interest Calculator</h1>
+    <p>Enter Principal Amount: <input type="number" id="principal" placeholder="Principal"></p>
+    <p>Enter Interest Rate (%): <input type="number" id="rate" placeholder="Rate"></p>
+    <p>Enter Time (Years): <input type="number" id="time" placeholder="Time"></p>
+    <p>Compounding Frequency:</p>
+    <select id="frequency">
+        <option value="annual">Annually</option>
+        <option value="semi-annual">Semi-Annually</option>
+        <option value="quarterly">Quarterly</option>
+        <option value="monthly">Monthly</option>
+    </select>
+    <button onclick="calculateInterest()">Calculate Interest</button>
+    <p>Compound Interest: <span id="interestResult"></span></p>
+    <p>Total Amount: <span id="totalAmount"></span></p>
+    <script src="compoundintrest.js"></script>
+</body>
+</html>
